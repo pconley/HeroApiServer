@@ -1,24 +1,18 @@
-# README
+# Hero API Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This rails app is designed to be used with the "tour of heros" angular 2 client.  The last step uses a fake API, but this will work.
 
-Things you may want to cover:
+# Instructions
 
-* Ruby version
+clone this repo
 
-* System dependencies
+build the image
 
-* Configuration
+run the image in an interactive container
 
-* Database creation
+rake db:migrate
+rake db:add_heroes
+rails s
 
-* Database initialization
+now access the API as... http://localhost:3000/heros/6
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

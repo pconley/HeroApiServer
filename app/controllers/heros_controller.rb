@@ -1,5 +1,5 @@
 class HerosController < ApplicationController
-  before_action :set_hero, only: [:show, :update, :destroy]
+  before_action :set_hero, only: [:show, :update, :destroy, :save]
 
   # GET /heros
   def index
@@ -24,6 +24,11 @@ class HerosController < ApplicationController
     end
   end
 
+  # Added a route to update beyond the normal rails set of 
+  # actions to match the expected interaction of the heros 
+  # client PUT /heros will update based on the id in the params
+
+  # PUT /heros
   # PATCH/PUT /heros/1
   def update
     if @hero.update(hero_params)
