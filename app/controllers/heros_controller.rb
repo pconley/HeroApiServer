@@ -2,9 +2,12 @@ class HerosController < ApplicationController
   before_action :set_hero, only: [:show, :update, :destroy, :save]
 
   # GET /heros
+  # GET /heros?name=supe
   def index
-    @heros = Hero.all
-
+    term = params[:name]
+    puts "*** index: term = #{term}"
+    @heros = term ? Hero.where("name like ?", "%#{term}%") : Hero.all
+    puts "*** found #{@heros.count} matches"
     render json: @heros
   end
 
