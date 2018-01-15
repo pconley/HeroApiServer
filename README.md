@@ -29,3 +29,6 @@ rails server
 
 Now you can test access the API (via a browser)... http://localhost:3000/heros/6
 
+Ctrl-c to kill the rails server and 'exit' to leave the container.
+
+Note: all these commands are in the exec.sh file (not to be run directly!)
