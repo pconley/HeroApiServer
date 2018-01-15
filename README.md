@@ -4,7 +4,7 @@ This project is a rails app packaged in a docker container.  It is designed to b
 
 # Instructions
 
-Clone this repo as usuaul.
+Clone this repo as usual.
 
 Build the image from the directory with the Docerfile
 ```
@@ -27,9 +27,9 @@ Then (every time) start the rails server
 rails server
 ```
 
-Now you can test access the API (via a browser)... http://localhost:3000/heros/6
+Now you can test the API (via a browser)... http://localhost:3000/heros/6
 
-And, it should be available to your angular client when you set the base url.  Note the spelling of "heros" in the url... there is no e (that was from a rails-ism).
+And, it should be available to your angular client when you set the base url.  Note the spelling of "heros" in the url... there is no "e" (that was from a rails pluralisation when using its generator).
 
 Ctrl-c to kill the rails server and 'exit' to leave the container.
 
