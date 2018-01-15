@@ -22,12 +22,14 @@ rake db:migrate
 rake db:add_heroes
 ```
 
-Then start the rails server
+Then (every time) start the rails server
 ```
 rails server
 ```
 
 Now you can test access the API (via a browser)... http://localhost:3000/heros/6
+
+And, it should be available to your angular client when you set the base url.  Note the spelling of "heros" in the url... there is no e (that was from a rails-ism).
 
 Ctrl-c to kill the rails server and 'exit' to leave the container.
 
